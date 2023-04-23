@@ -50,20 +50,20 @@ INSERT INTO `countries` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `manufacturer`
+-- Структура таблицы `manufacturers`
 --
 
-CREATE TABLE `manufacturer` (
+CREATE TABLE `manufacturers` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `country_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Дамп данных таблицы `manufacturer`
+-- Дамп данных таблицы `manufacturers`
 --
 
-INSERT INTO `manufacturer` (`id`, `name`, `country_id`) VALUES
+INSERT INTO `manufacturers` (`id`, `name`, `country_id`) VALUES
 (1, 'Nestle', 2),
 (2, 'Danone', 1),
 (3, 'Kraft Foods', 1),
@@ -76,7 +76,7 @@ INSERT INTO `manufacturer` (`id`, `name`, `country_id`) VALUES
 (10, 'Hershey\'s', 8),
 (11, 'General Mills', 8),
 (12, 'Kraft Heinz', 9),
-(13, 'Mondelez', 5),
+(13, 'Mondelez', 2),
 (14, 'Mondelēz International', 6),
 (15, 'McCormick & Company', 8),
 (16, 'Kikkoman Corporation', 9),
@@ -250,9 +250,9 @@ ALTER TABLE `countries`
   ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `manufacturer`
+-- Индексы таблицы `manufacturers`
 --
-ALTER TABLE `manufacturer`
+ALTER TABLE `manufacturers`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -284,9 +284,9 @@ ALTER TABLE `countries`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT для таблицы `manufacturer`
+-- AUTO_INCREMENT для таблицы `manufacturers`
 --
-ALTER TABLE `manufacturer`
+ALTER TABLE `manufacturers`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
